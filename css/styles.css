@@ -1,0 +1,32 @@
+body{
+    font-family: "Roboto",sans-serif;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    height: 5em;
+}
+.navbar-brand , .nav-item > a {
+    color:#fff !important;
+}
+.navbar-brand:hover , .nav-item > a:hover {
+    color: #34eb1e !important;
+}
+
+h1{
+    color: #33475b;
+    font-weight: 400;
+}
+.textarea-height{
+    height: 6em !important;
+}
+.container{
+    margin-top: 7rem !important;
+}
+footer{
+    border-top-style: solid;
+    border-top-color: #e7ebf2 !important;
+    padding-top: 10px;
+
+}
