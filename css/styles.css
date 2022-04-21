@@ -1,5 +1,6 @@
 body{
     font-family: "Roboto",sans-serif;
+    background: lightblue;
 }
 a{
     text-decoration: none;
@@ -24,9 +25,76 @@ h1{
 .container{
     margin-top: 7rem !important;
 }
+
+
+/** adding the sun to page */
+.sun{
+    background: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white;
+}
+/* adding moon to page **/
+.moon{
+    position: relative;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    height: 70px;
+    width: 70px;
+    box-shadow: -15px 15px 0 5px rgb(255, 255, 255);
+    border-radius: 50%;
+}
+/* backgrounds */
+.day {
+    background-color: lightblue;
+}
+.sunset{ background-color: lightskyblue; }
+
+.night{
+    background-color: black;
+    color: white;
+}
+
+/* label colors at night*/
+.night-label-color{
+    color: black !important;
+}
+
+#contact-btn {
+    animation: moveButton 4s linear;
+    animation-play-state: paused;
+    position:relative;
+
+}
+@keyframes moveButton {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+.play{
+    animation-play-state: running !important;
+}
+.pause{
+    animation-play-state: paused !important;
+}
+
+#deliveryMessage{
+    display: none;
+    height: 381px;
+    justify-content: center;
+
+}
+
+/* footer **/
 footer{
     border-top-style: solid;
     border-top-color: #e7ebf2 !important;
     padding-top: 10px;
-
 }
